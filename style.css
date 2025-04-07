@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2C4F5A; /* Fondo azul verdoso oscuro */
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.title {
+  color: #DAF47F; /* Amarillo verdoso claro */
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-shadow: 3px 3px #000;
+  text-align: center;
+}
+
+#gameArea {
+  position: relative;
+  border: 5px solid #C3FF45; /* Verde lima brillante */
+  padding: 8px;
+  background-color: #B3DDC7; /* Verde pálido */
+  border-radius: 8px;
+  box-shadow: 0 0 0 5px #DAF47F, 0 0 0 10px #84E460, 0 0 25px #C3FF45;
+  margin-bottom: 20px;
+}
+
+#gameCanvas {
+  display: block;
+  border-radius: 4px;
+  /* Los colores del tablero (bg1, bg2) se definen en JS */
+}
+
+/* Contenedor para alinear puntajes */
+.scores-container {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#score {
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Estilos para #highScore */
+#highScore {
+  color: #FFD700; /* Dorado */
+  font-size: 14px;
+  text-shadow: 2px 2px #000;
+  margin-bottom: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+#pauseBtn {
+  padding: 12px 25px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  background-color: #DAF47F;
+  border: none;
+  border-bottom: 4px solid #8a9a4a;
+  color: #2C4F5A;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+  margin-top: 10px;
+}
+
+#pauseBtn:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+  background-color: #c8e070;
+}
+
+#gameOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #DAF47F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  z-index: 10;
+  text-align: center;
+  padding: 20px;
+  border-radius: 4px;
+  line-height: 1.6;
+}
+
+#gameOverlay button {
+  margin-top: 25px;
+  padding: 12px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  background-color: #84E460;
+  color: #2C4F5A;
+  border: none;
+  border-bottom: 4px solid #5a9a40;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+
+#gameOverlay button:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+  background-color: #73c850;
+}
