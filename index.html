@@ -1,0 +1,25 @@
+<body>
+    <h1 class="title">SNAKE REBORN</h1>
+    <div class="scores-container">
+        <div id="score">Puntos: 0</div>
+        <div id="highScore">Record: 0</div>
+    </div>
+
+    <div id="gameArea">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div id="gameOverlay">
+            <div id="overlayText">
+            </div>
+        </div>
+    </div>
+
+    <button id="pauseBtn">Pausa / Reanudar</button>
+
+    <audio id="eatSound" src="sounds/eat.mp3"></audio>
+    <audio id="loseSound" src="sounds/lose.mp3"></audio>
+    <audio id="startSound" src="sounds/start.mp3"></audio>
+    <audio id="achievementSound" src="sounds/achievement.mp3"></audio>
+    <audio id="backgroundMusic" src="sounds/music.mp3" loop></audio>
+
+    <script src="script.js"></script>
+</body>
